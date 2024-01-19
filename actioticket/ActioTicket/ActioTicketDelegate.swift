@@ -7,9 +7,9 @@
 
 import Foundation
 
-class ActioTicketDelegate {
+public class ActioTicketDelegate {
     
-    init() {
+    public init() {
         
     }
     
