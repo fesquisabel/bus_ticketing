@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B003A71B2B5B05940054C5F0 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003A71A2B5B05940054C5F0 /* LaunchScreen.swift */; };
+		B003A71E2B5B05E20054C5F0 /* actioticket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B003A71C2B5B05E20054C5F0 /* actioticket.xcdatamodeld */; };
+		B003A7202B5B06630054C5F0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003A71F2B5B06630054C5F0 /* Persistence.swift */; };
 		B08F4A072B5AFA99004A57B1 /* actioticketlibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = B08F4A062B5AFA99004A57B1 /* actioticketlibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B08F4A2D2B5AFAE6004A57B1 /* ActioTicketDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F4A2C2B5AFAE6004A57B1 /* ActioTicketDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B003A7082B5B02510054C5F0 /* TPVVInLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TPVVInLibrary.xcframework; sourceTree = "<group>"; };
+		B003A71A2B5B05940054C5F0 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		B003A71D2B5B05E20054C5F0 /* actioticket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = actioticket.xcdatamodel; sourceTree = "<group>"; };
+		B003A71F2B5B06630054C5F0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B08F4A032B5AFA99004A57B1 /* ActioTicket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActioTicket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08F4A062B5AFA99004A57B1 /* actioticketlibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = actioticketlibrary.h; sourceTree = "<group>"; };
 		B08F4A2C2B5AFAE6004A57B1 /* ActioTicketDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActioTicketDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,9 @@
 			children = (
 				B08F4A2C2B5AFAE6004A57B1 /* ActioTicketDelegate.swift */,
 				B08F4A062B5AFA99004A57B1 /* actioticketlibrary.h */,
+				B003A71A2B5B05940054C5F0 /* LaunchScreen.swift */,
+				B003A71C2B5B05E20054C5F0 /* actioticket.xcdatamodeld */,
+				B003A71F2B5B06630054C5F0 /* Persistence.swift */,
 			);
 			path = ActioTicket;
 			sourceTree = "<group>";
@@ -143,6 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B003A71E2B5B05E20054C5F0 /* actioticket.xcdatamodeld in Sources */,
+				B003A7202B5B06630054C5F0 /* Persistence.swift in Sources */,
+				B003A71B2B5B05940054C5F0 /* LaunchScreen.swift in Sources */,
 				B08F4A2D2B5AFAE6004A57B1 /* ActioTicketDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +384,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B003A71C2B5B05E20054C5F0 /* actioticket.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B003A71D2B5B05E20054C5F0 /* actioticket.xcdatamodel */,
+			);
+			currentVersion = B003A71D2B5B05E20054C5F0 /* actioticket.xcdatamodel */;
+			path = actioticket.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B08F49FA2B5AFA99004A57B1 /* Project object */;
 }
