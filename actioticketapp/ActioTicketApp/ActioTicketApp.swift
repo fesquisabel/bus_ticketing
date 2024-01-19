@@ -7,6 +7,7 @@
 
 import SwiftUI
 import ActioTicket
+import TPVVInLibrary
 
 @main
 struct ActioTicketApp: App {

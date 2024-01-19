@@ -12,6 +12,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B003A7082B5B02510054C5F0 /* TPVVInLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TPVVInLibrary.xcframework; sourceTree = "<group>"; };
 		B08F4A032B5AFA99004A57B1 /* ActioTicket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActioTicket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08F4A062B5AFA99004A57B1 /* actioticketlibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = actioticketlibrary.h; sourceTree = "<group>"; };
 		B08F4A2C2B5AFAE6004A57B1 /* ActioTicketDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActioTicketDelegate.swift; sourceTree = "<group>"; };
@@ -28,11 +29,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B003A70E2B5B03710054C5F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B08F49F92B5AFA99004A57B1 = {
 			isa = PBXGroup;
 			children = (
+				B003A7082B5B02510054C5F0 /* TPVVInLibrary.xcframework */,
 				B08F4A052B5AFA99004A57B1 /* ActioTicket */,
 				B08F4A042B5AFA99004A57B1 /* Products */,
+				B003A70E2B5B03710054C5F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
