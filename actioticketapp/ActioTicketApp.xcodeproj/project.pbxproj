@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B003A6D72B5AFDFA0054C5F0 /* ActioTicket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B003A6D62B5AFDFA0054C5F0 /* ActioTicket.framework */; };
+		B003A6D82B5AFDFA0054C5F0 /* ActioTicket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B003A6D62B5AFDFA0054C5F0 /* ActioTicket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B08F4A1A2B5AFAAB004A57B1 /* ActioTicketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F4A192B5AFAAB004A57B1 /* ActioTicketApp.swift */; };
 		B08F4A1C2B5AFAAB004A57B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F4A1B2B5AFAAB004A57B1 /* ContentView.swift */; };
 		B08F4A1E2B5AFAAC004A57B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08F4A1D2B5AFAAC004A57B1 /* Assets.xcassets */; };
@@ -15,8 +17,23 @@
 		B08F4A262B5AFAAC004A57B1 /* actioticket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B08F4A242B5AFAAC004A57B1 /* actioticket.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B003A6D92B5AFDFA0054C5F0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B003A6D82B5AFDFA0054C5F0 /* ActioTicket.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		B08F4A162B5AFAAB004A57B1 /* actioticket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = actioticket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B003A6D62B5AFDFA0054C5F0 /* ActioTicket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ActioTicket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B08F4A162B5AFAAB004A57B1 /* ActioTicketApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActioTicketApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08F4A192B5AFAAB004A57B1 /* ActioTicketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActioTicketApp.swift; sourceTree = "<group>"; };
 		B08F4A1B2B5AFAAB004A57B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B08F4A1D2B5AFAAC004A57B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,29 +47,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B003A6D72B5AFDFA0054C5F0 /* ActioTicket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B003A6D52B5AFDFA0054C5F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B003A6D62B5AFDFA0054C5F0 /* ActioTicket.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B08F4A0D2B5AFAAB004A57B1 = {
 			isa = PBXGroup;
 			children = (
-				B08F4A182B5AFAAB004A57B1 /* actioticket */,
+				B08F4A182B5AFAAB004A57B1 /* ActioTicketApp */,
 				B08F4A172B5AFAAB004A57B1 /* Products */,
+				B003A6D52B5AFDFA0054C5F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		B08F4A172B5AFAAB004A57B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B08F4A162B5AFAAB004A57B1 /* actioticket.app */,
+				B08F4A162B5AFAAB004A57B1 /* ActioTicketApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B08F4A182B5AFAAB004A57B1 /* actioticket */ = {
+		B08F4A182B5AFAAB004A57B1 /* ActioTicketApp */ = {
 			isa = PBXGroup;
 			children = (
 				B08F4A192B5AFAAB004A57B1 /* ActioTicketApp.swift */,
@@ -62,7 +89,7 @@
 				B08F4A242B5AFAAC004A57B1 /* actioticket.xcdatamodeld */,
 				B08F4A1F2B5AFAAC004A57B1 /* Preview Content */,
 			);
-			path = actioticket;
+			path = ActioTicketApp;
 			sourceTree = "<group>";
 		};
 		B08F4A1F2B5AFAAC004A57B1 /* Preview Content */ = {
@@ -76,21 +103,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B08F4A152B5AFAAB004A57B1 /* actioticket */ = {
+		B08F4A152B5AFAAB004A57B1 /* ActioTicketApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B08F4A292B5AFAAC004A57B1 /* Build configuration list for PBXNativeTarget "actioticket" */;
+			buildConfigurationList = B08F4A292B5AFAAC004A57B1 /* Build configuration list for PBXNativeTarget "ActioTicketApp" */;
 			buildPhases = (
 				B08F4A122B5AFAAB004A57B1 /* Sources */,
 				B08F4A132B5AFAAB004A57B1 /* Frameworks */,
 				B08F4A142B5AFAAB004A57B1 /* Resources */,
+				B003A6D92B5AFDFA0054C5F0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = actioticket;
+			name = ActioTicketApp;
 			productName = actioticket;
-			productReference = B08F4A162B5AFAAB004A57B1 /* actioticket.app */;
+			productReference = B08F4A162B5AFAAB004A57B1 /* ActioTicketApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +136,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B08F4A112B5AFAAB004A57B1 /* Build configuration list for PBXProject "actioticket" */;
+			buildConfigurationList = B08F4A112B5AFAAB004A57B1 /* Build configuration list for PBXProject "ActioTicketApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B08F4A152B5AFAAB004A57B1 /* actioticket */,
+				B08F4A152B5AFAAB004A57B1 /* ActioTicketApp */,
 			);
 		};
 /* End PBXProject section */
@@ -279,7 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"actioticket/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ActioTicketApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 67L2WX55UW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -312,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"actioticket/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ActioTicketApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 67L2WX55UW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -341,7 +369,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B08F4A112B5AFAAB004A57B1 /* Build configuration list for PBXProject "actioticket" */ = {
+		B08F4A112B5AFAAB004A57B1 /* Build configuration list for PBXProject "ActioTicketApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B08F4A272B5AFAAC004A57B1 /* Debug */,
@@ -350,7 +378,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B08F4A292B5AFAAC004A57B1 /* Build configuration list for PBXNativeTarget "actioticket" */ = {
+		B08F4A292B5AFAAC004A57B1 /* Build configuration list for PBXNativeTarget "ActioTicketApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B08F4A2A2B5AFAAC004A57B1 /* Debug */,

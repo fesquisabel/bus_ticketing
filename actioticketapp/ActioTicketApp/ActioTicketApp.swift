@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ActioTicket
 
 @main
 struct ActioTicketApp: App {

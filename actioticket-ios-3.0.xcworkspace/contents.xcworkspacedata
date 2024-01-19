@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:actioticket/actioticket.xcodeproj">
+      location = "group:/Users/esqui9/Projects/actioticket-ios-3.0/actioticketapp/ActioTicketApp.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:actioticketlibrary/actioticketlibrary.xcodeproj">
+      location = "group:/Users/esqui9/Projects/actioticket-ios-3.0/actioticket/ActioTicket.xcodeproj">
    </FileRef>
 </Workspace>
