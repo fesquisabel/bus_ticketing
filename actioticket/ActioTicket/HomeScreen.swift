@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeScreen: View {
     
+    var dismissAction: () -> Void
+
     var body: some View {
         ZStack {
             Color.gray.opacity(0.2).edgesIgnoringSafeArea(.all)
@@ -23,11 +25,24 @@ struct HomeScreen: View {
                 .foregroundColor(.white)
                 .tint(.blue)
                 Spacer()
-            }
+            }.navigationBarItems(
+                leading: MyBackButton {
+                    dismissAction()
+                }
+            )
         }
     }
 }
 
-#Preview {
-    HomeScreen()
+struct MyBackButton: View {
+    var action: () -> Void
+
+    var body: some View {
+        Button(action: {
+            action()
+        }) {
+            Image(systemName: "arrow.left")
+                .foregroundColor(.blue)
+        }
+    }
 }

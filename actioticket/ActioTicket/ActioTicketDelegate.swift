@@ -12,8 +12,4 @@ class ActioTicketDelegate {
 
     @StateObject static var dataController = DataController()
     
-    public static func loadDataController() {
-        dataController.loadPersistentStores()
-    }
-    
 }

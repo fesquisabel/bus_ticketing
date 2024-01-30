@@ -11,6 +11,9 @@
 		B003A71E2B5B05E20054C5F0 /* actioticket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B003A71C2B5B05E20054C5F0 /* actioticket.xcdatamodeld */; };
 		B03ACB6E2B69645B00A871D8 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB6D2B69645B00A871D8 /* HomeScreen.swift */; };
 		B03ACB702B69675F00A871D8 /* WalletTypesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB6F2B69675F00A871D8 /* WalletTypesScreen.swift */; };
+		B03ACB762B69749300A871D8 /* RedsysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB752B69749300A871D8 /* RedsysView.swift */; };
+		B03ACB782B69771300A871D8 /* RedsysDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB772B69771300A871D8 /* RedsysDelegate.swift */; };
+		B03ACB7C2B6977CD00A871D8 /* TPVManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB7B2B6977CD00A871D8 /* TPVManager.swift */; };
 		B07AAAC32B692B3500FCBA13 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B07AAAC22B692B3500FCBA13 /* Images.xcassets */; };
 		B08F4A072B5AFA99004A57B1 /* actioticketlibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = B08F4A062B5AFA99004A57B1 /* actioticketlibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B08F4A2D2B5AFAE6004A57B1 /* ActioTicketDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F4A2C2B5AFAE6004A57B1 /* ActioTicketDelegate.swift */; };
@@ -23,6 +26,9 @@
 		B003A71D2B5B05E20054C5F0 /* actioticket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = actioticket.xcdatamodel; sourceTree = "<group>"; };
 		B03ACB6D2B69645B00A871D8 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		B03ACB6F2B69675F00A871D8 /* WalletTypesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTypesScreen.swift; sourceTree = "<group>"; };
+		B03ACB752B69749300A871D8 /* RedsysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedsysView.swift; sourceTree = "<group>"; };
+		B03ACB772B69771300A871D8 /* RedsysDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedsysDelegate.swift; sourceTree = "<group>"; };
+		B03ACB7B2B6977CD00A871D8 /* TPVManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPVManager.swift; sourceTree = "<group>"; };
 		B07AAAC22B692B3500FCBA13 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B08F4A032B5AFA99004A57B1 /* ActioTicket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActioTicket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08F4A062B5AFA99004A57B1 /* actioticketlibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = actioticketlibrary.h; sourceTree = "<group>"; };
@@ -46,6 +52,24 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B03ACB792B6977B500A871D8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B03ACB7A2B6977BE00A871D8 /* TPVManager */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B03ACB7A2B6977BE00A871D8 /* TPVManager */ = {
+			isa = PBXGroup;
+			children = (
+				B03ACB7B2B6977CD00A871D8 /* TPVManager.swift */,
+				B03ACB752B69749300A871D8 /* RedsysView.swift */,
+				B03ACB772B69771300A871D8 /* RedsysDelegate.swift */,
+			);
+			path = TPVManager;
 			sourceTree = "<group>";
 		};
 		B07AAAC02B69298500FCBA13 /* Resources */ = {
@@ -91,6 +115,7 @@
 				B003A71A2B5B05940054C5F0 /* LaunchScreen.swift */,
 				B03ACB6D2B69645B00A871D8 /* HomeScreen.swift */,
 				B03ACB6F2B69675F00A871D8 /* WalletTypesScreen.swift */,
+				B03ACB792B6977B500A871D8 /* Utils */,
 				B07AAAC12B69299400FCBA13 /* Models */,
 				B07AAAC02B69298500FCBA13 /* Resources */,
 			);
@@ -178,9 +203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03ACB762B69749300A871D8 /* RedsysView.swift in Sources */,
 				B097186A2B680B020097B40B /* DataController.swift in Sources */,
+				B03ACB7C2B6977CD00A871D8 /* TPVManager.swift in Sources */,
 				B03ACB6E2B69645B00A871D8 /* HomeScreen.swift in Sources */,
 				B03ACB702B69675F00A871D8 /* WalletTypesScreen.swift in Sources */,
+				B03ACB782B69771300A871D8 /* RedsysDelegate.swift in Sources */,
 				B003A71E2B5B05E20054C5F0 /* actioticket.xcdatamodeld in Sources */,
 				B003A71B2B5B05940054C5F0 /* LaunchScreen.swift in Sources */,
 				B08F4A2D2B5AFAE6004A57B1 /* ActioTicketDelegate.swift in Sources */,

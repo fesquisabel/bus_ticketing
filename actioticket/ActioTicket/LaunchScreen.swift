@@ -9,6 +9,7 @@ import SwiftUI
 
 public struct LaunchScreen: View {
     
+    @Environment(\.dismiss) var dismiss
     @State private var isActive: Bool = false
 
     @Environment(\.managedObjectContext) private var viewContext
@@ -43,7 +44,9 @@ public struct LaunchScreen: View {
                 }
                 .navigationDestination(
                     isPresented: $isActive) {
-                        HomeScreen().navigationBarBackButtonHidden(true)
+                        HomeScreen() {
+                            dismiss()
+                        }.navigationBarBackButtonHidden()
                     }
             }
         }

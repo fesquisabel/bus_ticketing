@@ -10,22 +10,24 @@ import ActioTicket
 
 struct ContentView: View {
     
+    @State private var isPresented: Bool = false
+
     init() {
         UINavigationBar.setAnimationsEnabled(false)
     }
 
     var body: some View {
         VStack {
-            NavigationView() {
-                NavigationLink(destination: LaunchScreen()) {
-                    Text("Open SDK")
-                }
+            Button("Open SDK") {
+                isPresented.toggle()
             }.buttonStyle(.borderedProminent)
                 .bold()
                 .controlSize(.large)
                 .font(.title3)
                 .foregroundColor(.white)
                 .tint(.blue)
+        }.fullScreenCover(isPresented: $isPresented) {
+            LaunchScreen()
         }
     }
 }
