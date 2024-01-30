@@ -9,17 +9,22 @@ import SwiftUI
 
 struct WalletTypesScreen: View {
     
-    @Environment(\.dismiss) var dismiss
-    @State private var isPresented: Bool = false
+    @Binding var toRoot: Bool
+    @Environment(\.dismiss) var dismissToRoot: DismissAction
+    
+    @State private var openTpv: Bool = false
+    @State private var showTpvOk: Bool = false
+    @State private var showTpvKo: Bool = false
 
     var body: some View {
         ZStack {
             Color.gray.opacity(0.2).edgesIgnoringSafeArea(.all)
             VStack {
-                Spacer()
                 Button("Open TPV") {
                     TPVManager.shared.initialize()
-                    isPresented.toggle()
+                    showTpvOk = false
+                    showTpvKo = false
+                    openTpv = true
                 }
             }.buttonStyle(.borderedProminent)
                 .bold()
@@ -28,23 +33,33 @@ struct WalletTypesScreen: View {
                 .foregroundColor(.white)
                 .tint(.blue)
             Spacer()
-        }.fullScreenCover(isPresented: $isPresented) {
-            RedsysView()
         }.onAppear {
-            NotificationCenter.default.addObserver(forName: .redsysResponse, object: nil, queue: .main) { (notification) in
-                if let dataOK = RedsysResponseManager.shared.dataOK {
-                    dismiss()
-                } else if let dataKO = RedsysResponseManager.shared.dataKO {
-                    dismiss()
+            if toRoot {
+                toRoot = false
+                dismissToRoot()
+            } else {
+                NotificationCenter.default.addObserver(forName: .redsysResponse, object: nil, queue: .main) { (notification) in
+                    if let dataOK = RedsysResponseManager.shared.dataOK {
+                        showTpvKo = false
+                        showTpvOk = true
+                    } else if let dataKO = RedsysResponseManager.shared.dataKO {
+                        showTpvOk = false
+                        showTpvKo = true
+                    }
                 }
             }
         }
         .onDisappear {
             NotificationCenter.default.removeObserver(self)
-        }
+        }.fullScreenCover(isPresented: $openTpv) {
+            RedsysView()
+        }.navigationDestination(
+            isPresented: $showTpvOk) {
+                TpvOkScreen(toRoot: $toRoot).navigationBarBackButtonHidden()
+            }
+        .navigationDestination(
+            isPresented: $showTpvKo) {
+                TpvKoScreen(toRoot: $toRoot)
+            }
     }
-}
-
-#Preview {
-    WalletTypesScreen()
 }

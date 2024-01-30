@@ -9,14 +9,17 @@ import SwiftUI
 
 struct HomeScreen: View {
     
-    var dismissAction: () -> Void
+    var closeSDK: (() -> Void)?
+    
+    @State var toRoot = false
+    @Environment(\.dismiss) var dismissToRoot: DismissAction
 
     var body: some View {
         ZStack {
             Color.gray.opacity(0.2).edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
-                NavigationLink(destination: WalletTypesScreen()) {
+                NavigationLink(destination: WalletTypesScreen(toRoot: $toRoot)) {
                     Text("BUY WALLET")
                 }.buttonStyle(.borderedProminent)
                 .bold()
@@ -26,15 +29,15 @@ struct HomeScreen: View {
                 .tint(.blue)
                 Spacer()
             }.navigationBarItems(
-                leading: MyBackButton {
-                    dismissAction()
+                leading: CloseButton {
+                    closeSDK?()
                 }
             )
         }
     }
 }
 
-struct MyBackButton: View {
+struct CloseButton: View {
     var action: () -> Void
 
     var body: some View {
