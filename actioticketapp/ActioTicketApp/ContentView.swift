@@ -6,28 +6,32 @@
 //
 
 import SwiftUI
-import CoreData
+import ActioTicket
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
     
+    init() {
+        UINavigationBar.setAnimationsEnabled(false)
+    }
+
     var body: some View {
-        NavigationView {
-            List {
-                
-            }
-            .toolbar {
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Text("Open")
-                    }
+        VStack {
+            NavigationView() {
+                NavigationLink(destination: LaunchScreen()) {
+                    Text("Open SDK")
                 }
-            }
-            Text("Select an item")
+            }.buttonStyle(.borderedProminent)
+                .bold()
+                .controlSize(.large)
+                .font(.title3)
+                .foregroundColor(.white)
+                .tint(.blue)
         }
     }
-    
-    func addItem() {
-        // TODO: OPEN LIBRARY
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }

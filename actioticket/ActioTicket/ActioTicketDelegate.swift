@@ -6,12 +6,14 @@
 //
 
 import Foundation
-import TPVVInLibrary
+import SwiftUI
 
-public class ActioTicketDelegate {
+class ActioTicketDelegate {
+
+    @StateObject static var dataController = DataController()
     
-    public init() {
-        
+    public static func loadDataController() {
+        dataController.loadPersistentStores()
     }
     
 }
