@@ -1,5 +1,5 @@
 //
-//  TpvOkScreen.swift
+//  TpvKoView.swift
 //  ActioTicket
 //
 //  Created by Fermin Esquisabel Garcia on 30/1/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TpvOkScreen: View {
+struct TpvKoView: View {
     
     @Binding var toRoot: Bool
     @Environment(\.dismiss) var dismissToRoot: DismissAction
@@ -15,7 +15,7 @@ struct TpvOkScreen: View {
     var body: some View {
         ZStack {
             Color.gray.opacity(0.2).edgesIgnoringSafeArea(.all)
-            Text("OK TPV")
+            Text("KO TPV")
             VStack {
                 Spacer()
                 Button("BACK TO HOME") {
@@ -27,7 +27,7 @@ struct TpvOkScreen: View {
                 .controlSize(.large)
                 .font(.title3)
                 .foregroundColor(.white)
-                .tint(.blue)
+                .tint(.ityneriBlue)
             Spacer()
         }
     }

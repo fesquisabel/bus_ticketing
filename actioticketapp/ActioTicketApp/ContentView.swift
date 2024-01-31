@@ -27,7 +27,7 @@ struct ContentView: View {
                 .foregroundColor(.white)
                 .tint(.blue)
         }.fullScreenCover(isPresented: $isPresented) {
-            LaunchScreen()
+            LaunchView()
         }
     }
 }

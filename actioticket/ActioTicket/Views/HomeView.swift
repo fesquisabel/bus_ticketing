@@ -1,5 +1,5 @@
 //
-//  HomeScreen.swift
+//  HomeView.swift
 //  ActioTicket
 //
 //  Created by Fermin Esquisabel Garcia on 30/1/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeScreen: View {
+struct HomeView: View {
     
     var closeSDK: (() -> Void)?
     
@@ -19,14 +19,16 @@ struct HomeScreen: View {
             Color.gray.opacity(0.2).edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
-                NavigationLink(destination: WalletTypesScreen(toRoot: $toRoot)) {
-                    Text("BUY WALLET")
-                }.buttonStyle(.borderedProminent)
+                NavigationLink(destination: WalletTypesView(toRoot: $toRoot)) {
+                    Text("Comprar título")
+                }
+                .navigationTitle("")
+                .buttonStyle(.borderedProminent)
                 .bold()
                 .controlSize(.large)
                 .font(.title3)
                 .foregroundColor(.white)
-                .tint(.blue)
+                .tint(.ityneriBlue)
                 Spacer()
             }.navigationBarItems(
                 leading: CloseButton {
@@ -45,7 +47,7 @@ struct CloseButton: View {
             action()
         }) {
             Image(systemName: "arrow.left")
-                .foregroundColor(.blue)
+                .foregroundColor(.white)
         }
     }
 }

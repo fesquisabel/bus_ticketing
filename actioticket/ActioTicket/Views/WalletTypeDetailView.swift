@@ -1,5 +1,5 @@
 //
-//  WalletTypesScreen.swift
+//  WalletTypeDetailView.swift
 //  ActioTicket
 //
 //  Created by Fermin Esquisabel Garcia on 30/1/24.
@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct WalletTypesScreen: View {
+struct WalletTypeDetailView: View {
+    
+    @Environment(\.dismiss) var dismiss
     
     @Binding var toRoot: Bool
     @Environment(\.dismiss) var dismissToRoot: DismissAction
@@ -15,12 +17,21 @@ struct WalletTypesScreen: View {
     @State private var openTpv: Bool = false
     @State private var showTpvOk: Bool = false
     @State private var showTpvKo: Bool = false
-
+    @State var walletType: WalletType
+    
     var body: some View {
         ZStack {
-            Color.gray.opacity(0.2).edgesIgnoringSafeArea(.all)
             VStack {
-                Button("Open TPV") {
+                Color.ityneriBlue.edgesIgnoringSafeArea(.all).frame(height: 10)
+                Color.lightGray.edgesIgnoringSafeArea(.all)
+            }
+            VStack {
+                Text(walletType.name)
+                    .font(.title2)
+                    .foregroundStyle(.ityneriBlue)
+                    .padding(.top, 20)
+                Spacer()
+                Button("Pagar") {
                     TPVManager.shared.initialize()
                     showTpvOk = false
                     showTpvKo = false
@@ -31,11 +42,10 @@ struct WalletTypesScreen: View {
                 .controlSize(.large)
                 .font(.title3)
                 .foregroundColor(.white)
-                .tint(.blue)
+                .tint(.ityneriBlue)
             Spacer()
         }.onAppear {
             if toRoot {
-                toRoot = false
                 dismissToRoot()
             } else {
                 NotificationCenter.default.addObserver(forName: .redsysResponse, object: nil, queue: .main) { (notification) in
@@ -55,11 +65,20 @@ struct WalletTypesScreen: View {
             RedsysView()
         }.navigationDestination(
             isPresented: $showTpvOk) {
-                TpvOkScreen(toRoot: $toRoot).navigationBarBackButtonHidden()
+                TpvOkView(toRoot: $toRoot).navigationBarBackButtonHidden()
             }
         .navigationDestination(
             isPresented: $showTpvKo) {
-                TpvKoScreen(toRoot: $toRoot)
+                TpvKoView(toRoot: $toRoot)
             }
+        .navigationBarItems(
+            leading: BackButton {
+                dismiss()
+            }
+        ).navigationBarBackButtonHidden()
     }
+}
+
+#Preview {
+    WalletTypeDetailView(toRoot: .constant(false), walletType: WalletType(id: 0, name: "Billete Sencillo"))
 }

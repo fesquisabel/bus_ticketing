@@ -1,5 +1,5 @@
 //
-//  LaunchScreen.swift
+//  LaunchView.swift
 //  actioticket
 //
 //  Created by Fermin Esquisabel Garcia on 19/1/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct LaunchScreen: View {
+public struct LaunchView: View {
     
     @Environment(\.dismiss) var dismiss
     @State private var showHome: Bool = false
@@ -44,7 +44,7 @@ public struct LaunchScreen: View {
                 }
                 .navigationDestination(
                     isPresented: $showHome) {
-                        HomeScreen() {
+                        HomeView() {
                             dismiss()
                         }.navigationBarBackButtonHidden()
                     }
@@ -54,6 +54,6 @@ public struct LaunchScreen: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        LaunchScreen()
+        LaunchView()
     }
 }

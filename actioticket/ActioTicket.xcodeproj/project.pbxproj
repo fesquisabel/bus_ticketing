@@ -7,38 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B003A71B2B5B05940054C5F0 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003A71A2B5B05940054C5F0 /* LaunchScreen.swift */; };
+		B003A71B2B5B05940054C5F0 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003A71A2B5B05940054C5F0 /* LaunchView.swift */; };
 		B003A71E2B5B05E20054C5F0 /* actioticket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B003A71C2B5B05E20054C5F0 /* actioticket.xcdatamodeld */; };
-		B03ACB6E2B69645B00A871D8 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB6D2B69645B00A871D8 /* HomeScreen.swift */; };
-		B03ACB702B69675F00A871D8 /* WalletTypesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB6F2B69675F00A871D8 /* WalletTypesScreen.swift */; };
+		B03ACB6E2B69645B00A871D8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB6D2B69645B00A871D8 /* HomeView.swift */; };
+		B03ACB702B69675F00A871D8 /* WalletTypesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB6F2B69675F00A871D8 /* WalletTypesView.swift */; };
 		B03ACB762B69749300A871D8 /* RedsysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB752B69749300A871D8 /* RedsysView.swift */; };
 		B03ACB782B69771300A871D8 /* RedsysDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB772B69771300A871D8 /* RedsysDelegate.swift */; };
 		B03ACB7C2B6977CD00A871D8 /* TPVManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB7B2B6977CD00A871D8 /* TPVManager.swift */; };
-		B03ACB822B697CD400A871D8 /* TpvOkScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB812B697CD400A871D8 /* TpvOkScreen.swift */; };
-		B03ACB842B697CDB00A871D8 /* TpvKoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB832B697CDB00A871D8 /* TpvKoScreen.swift */; };
-		B03ACB852B69875600A871D8 /* TPVVInLibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B003A7082B5B02510054C5F0 /* TPVVInLibrary.xcframework */; };
+		B03ACB822B697CD400A871D8 /* TpvOkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB812B697CD400A871D8 /* TpvOkView.swift */; };
+		B03ACB842B697CDB00A871D8 /* TpvKoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB832B697CDB00A871D8 /* TpvKoView.swift */; };
 		B07AAAC32B692B3500FCBA13 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B07AAAC22B692B3500FCBA13 /* Images.xcassets */; };
 		B08F4A072B5AFA99004A57B1 /* actioticketlibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = B08F4A062B5AFA99004A57B1 /* actioticketlibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B08F4A2D2B5AFAE6004A57B1 /* ActioTicketDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F4A2C2B5AFAE6004A57B1 /* ActioTicketDelegate.swift */; };
 		B097186A2B680B020097B40B /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09718692B680B020097B40B /* DataController.swift */; };
+		B0ACD19A2B69AD8300C1F721 /* WalletTypesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD1992B69AD8300C1F721 /* WalletTypesInteractor.swift */; };
+		B0ACD19C2B69ADA400C1F721 /* WalletType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD19B2B69ADA400C1F721 /* WalletType.swift */; };
+		B0ACD1A12B69AF6300C1F721 /* WalletTypesLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD1A02B69AF6300C1F721 /* WalletTypesLogic.swift */; };
+		B0ACD1A32B69B2E300C1F721 /* WalletTypesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD1A22B69B2E300C1F721 /* WalletTypesViewModel.swift */; };
+		B0ACD1A52B69B4B600C1F721 /* WalletTypeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD1A42B69B4B600C1F721 /* WalletTypeDetailView.swift */; };
+		B0ACD1A72B69B5D900C1F721 /* WalletTypesInteractorPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD1A62B69B5D900C1F721 /* WalletTypesInteractorPreview.swift */; };
+		B0ACD1A92B69B7B600C1F721 /* WalletTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD1A82B69B7B600C1F721 /* WalletTypeCell.swift */; };
+		B0ACD1AB2B69C82800C1F721 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0ACD1AA2B69C82800C1F721 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B003A7082B5B02510054C5F0 /* TPVVInLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TPVVInLibrary.xcframework; sourceTree = "<group>"; };
-		B003A71A2B5B05940054C5F0 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		B003A71A2B5B05940054C5F0 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		B003A71D2B5B05E20054C5F0 /* actioticket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = actioticket.xcdatamodel; sourceTree = "<group>"; };
-		B03ACB6D2B69645B00A871D8 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
-		B03ACB6F2B69675F00A871D8 /* WalletTypesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTypesScreen.swift; sourceTree = "<group>"; };
+		B03ACB6D2B69645B00A871D8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B03ACB6F2B69675F00A871D8 /* WalletTypesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTypesView.swift; sourceTree = "<group>"; };
 		B03ACB752B69749300A871D8 /* RedsysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedsysView.swift; sourceTree = "<group>"; };
 		B03ACB772B69771300A871D8 /* RedsysDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedsysDelegate.swift; sourceTree = "<group>"; };
 		B03ACB7B2B6977CD00A871D8 /* TPVManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPVManager.swift; sourceTree = "<group>"; };
-		B03ACB812B697CD400A871D8 /* TpvOkScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TpvOkScreen.swift; sourceTree = "<group>"; };
-		B03ACB832B697CDB00A871D8 /* TpvKoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TpvKoScreen.swift; sourceTree = "<group>"; };
+		B03ACB812B697CD400A871D8 /* TpvOkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TpvOkView.swift; sourceTree = "<group>"; };
+		B03ACB832B697CDB00A871D8 /* TpvKoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TpvKoView.swift; sourceTree = "<group>"; };
 		B07AAAC22B692B3500FCBA13 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B08F4A032B5AFA99004A57B1 /* ActioTicket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActioTicket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08F4A062B5AFA99004A57B1 /* actioticketlibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = actioticketlibrary.h; sourceTree = "<group>"; };
 		B08F4A2C2B5AFAE6004A57B1 /* ActioTicketDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActioTicketDelegate.swift; sourceTree = "<group>"; };
 		B09718692B680B020097B40B /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		B0ACD1992B69AD8300C1F721 /* WalletTypesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTypesInteractor.swift; sourceTree = "<group>"; };
+		B0ACD19B2B69ADA400C1F721 /* WalletType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletType.swift; sourceTree = "<group>"; };
+		B0ACD1A02B69AF6300C1F721 /* WalletTypesLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTypesLogic.swift; sourceTree = "<group>"; };
+		B0ACD1A22B69B2E300C1F721 /* WalletTypesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTypesViewModel.swift; sourceTree = "<group>"; };
+		B0ACD1A42B69B4B600C1F721 /* WalletTypeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTypeDetailView.swift; sourceTree = "<group>"; };
+		B0ACD1A62B69B5D900C1F721 /* WalletTypesInteractorPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTypesInteractorPreview.swift; sourceTree = "<group>"; };
+		B0ACD1A82B69B7B600C1F721 /* WalletTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTypeCell.swift; sourceTree = "<group>"; };
+		B0ACD1AA2B69C82800C1F721 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B03ACB852B69875600A871D8 /* TPVVInLibrary.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +77,7 @@
 		B03ACB792B6977B500A871D8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B0ACD1982B69AD4700C1F721 /* Extensions */,
 				B03ACB7A2B6977BE00A871D8 /* TPVManager */,
 			);
 			path = Utils;
@@ -82,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				B07AAAC22B692B3500FCBA13 /* Images.xcassets */,
+				B0ACD1AA2B69C82800C1F721 /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -89,8 +105,8 @@
 		B07AAAC12B69299400FCBA13 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B09718692B680B020097B40B /* DataController.swift */,
-				B003A71C2B5B05E20054C5F0 /* actioticket.xcdatamodeld */,
+				B0ACD19D2B69ADC000C1F721 /* CoreData */,
+				B0ACD19B2B69ADA400C1F721 /* WalletType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -118,16 +134,78 @@
 			children = (
 				B08F4A2C2B5AFAE6004A57B1 /* ActioTicketDelegate.swift */,
 				B08F4A062B5AFA99004A57B1 /* actioticketlibrary.h */,
-				B003A71A2B5B05940054C5F0 /* LaunchScreen.swift */,
-				B03ACB6D2B69645B00A871D8 /* HomeScreen.swift */,
-				B03ACB6F2B69675F00A871D8 /* WalletTypesScreen.swift */,
-				B03ACB812B697CD400A871D8 /* TpvOkScreen.swift */,
-				B03ACB832B697CDB00A871D8 /* TpvKoScreen.swift */,
-				B03ACB792B6977B500A871D8 /* Utils */,
+				B0ACD1952B69AC9000C1F721 /* Views */,
+				B0ACD1972B69AD0E00C1F721 /* ViewModels */,
+				B0ACD19F2B69AF5600C1F721 /* ModelLogic */,
+				B0ACD1962B69AD0100C1F721 /* Interactors */,
 				B07AAAC12B69299400FCBA13 /* Models */,
+				B03ACB792B6977B500A871D8 /* Utils */,
 				B07AAAC02B69298500FCBA13 /* Resources */,
+				B0ACD19E2B69AE7D00C1F721 /* Preview Content */,
 			);
 			path = ActioTicket;
+			sourceTree = "<group>";
+		};
+		B0ACD1952B69AC9000C1F721 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B003A71A2B5B05940054C5F0 /* LaunchView.swift */,
+				B03ACB6D2B69645B00A871D8 /* HomeView.swift */,
+				B03ACB6F2B69675F00A871D8 /* WalletTypesView.swift */,
+				B0ACD1A82B69B7B600C1F721 /* WalletTypeCell.swift */,
+				B0ACD1A42B69B4B600C1F721 /* WalletTypeDetailView.swift */,
+				B03ACB812B697CD400A871D8 /* TpvOkView.swift */,
+				B03ACB832B697CDB00A871D8 /* TpvKoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B0ACD1962B69AD0100C1F721 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				B0ACD1992B69AD8300C1F721 /* WalletTypesInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		B0ACD1972B69AD0E00C1F721 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B0ACD1A22B69B2E300C1F721 /* WalletTypesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B0ACD1982B69AD4700C1F721 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B0ACD19D2B69ADC000C1F721 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B09718692B680B020097B40B /* DataController.swift */,
+				B003A71C2B5B05E20054C5F0 /* actioticket.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B0ACD19E2B69AE7D00C1F721 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B0ACD1A62B69B5D900C1F721 /* WalletTypesInteractorPreview.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B0ACD19F2B69AF5600C1F721 /* ModelLogic */ = {
+			isa = PBXGroup;
+			children = (
+				B0ACD1A02B69AF6300C1F721 /* WalletTypesLogic.swift */,
+			);
+			path = ModelLogic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07AAAC32B692B3500FCBA13 /* Images.xcassets in Resources */,
+				B0ACD1AB2B69C82800C1F721 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,16 +290,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0ACD1A92B69B7B600C1F721 /* WalletTypeCell.swift in Sources */,
+				B0ACD1A72B69B5D900C1F721 /* WalletTypesInteractorPreview.swift in Sources */,
 				B03ACB762B69749300A871D8 /* RedsysView.swift in Sources */,
 				B097186A2B680B020097B40B /* DataController.swift in Sources */,
 				B03ACB7C2B6977CD00A871D8 /* TPVManager.swift in Sources */,
-				B03ACB6E2B69645B00A871D8 /* HomeScreen.swift in Sources */,
-				B03ACB702B69675F00A871D8 /* WalletTypesScreen.swift in Sources */,
-				B03ACB842B697CDB00A871D8 /* TpvKoScreen.swift in Sources */,
+				B0ACD19C2B69ADA400C1F721 /* WalletType.swift in Sources */,
+				B0ACD19A2B69AD8300C1F721 /* WalletTypesInteractor.swift in Sources */,
+				B03ACB6E2B69645B00A871D8 /* HomeView.swift in Sources */,
+				B03ACB702B69675F00A871D8 /* WalletTypesView.swift in Sources */,
+				B03ACB842B697CDB00A871D8 /* TpvKoView.swift in Sources */,
 				B03ACB782B69771300A871D8 /* RedsysDelegate.swift in Sources */,
 				B003A71E2B5B05E20054C5F0 /* actioticket.xcdatamodeld in Sources */,
-				B003A71B2B5B05940054C5F0 /* LaunchScreen.swift in Sources */,
-				B03ACB822B697CD400A871D8 /* TpvOkScreen.swift in Sources */,
+				B003A71B2B5B05940054C5F0 /* LaunchView.swift in Sources */,
+				B0ACD1A12B69AF6300C1F721 /* WalletTypesLogic.swift in Sources */,
+				B03ACB822B697CD400A871D8 /* TpvOkView.swift in Sources */,
+				B0ACD1A32B69B2E300C1F721 /* WalletTypesViewModel.swift in Sources */,
+				B0ACD1A52B69B4B600C1F721 /* WalletTypeDetailView.swift in Sources */,
 				B08F4A2D2B5AFAE6004A57B1 /* ActioTicketDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,7 +455,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -407,7 +493,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
