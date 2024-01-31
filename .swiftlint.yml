@@ -1,0 +1,30 @@
+disabled_rules:
+#errors
+  - identifier_name
+  - force_cast
+  - line_length
+  - shorthand_operator
+  
+#warnings
+  - trailing_whitespace
+  - control_statement
+  - force_try
+  - type_body_length
+  - inclusive_language
+  - compiler_protocol_init
+  - for_where
+  - weak_delegate
+  - function_parameter_count
+  - function_body_length
+  - class_delegate_protocol
+  - file_length
+
+cyclomatic_complexity:
+    warning: 30
+    error: 40
+    
+excluded:
+ - Pods
+ 
+force_try:
+ severity: warning

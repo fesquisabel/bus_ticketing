@@ -22,7 +22,7 @@ struct WalletTypesView: View {
                 Color.ityneriBlue.edgesIgnoringSafeArea(.all)
             }
             VStack(alignment: .leading) {
-                Text("Comprar título")
+                "buy_wallets".asLocalizedText()
                     .font(.title2)
                     .bold()
                     .padding()

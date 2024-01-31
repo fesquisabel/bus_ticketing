@@ -20,7 +20,7 @@ struct HomeView: View {
             VStack {
                 Spacer()
                 NavigationLink(destination: WalletTypesView(toRoot: $toRoot)) {
-                    Text("Comprar título")
+                    "buy_wallets".asLocalizedText()
                 }
                 .navigationTitle("")
                 .buttonStyle(.borderedProminent)

@@ -1,0 +1,44 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "%@" : {
+
+    },
+    "1,20€" : {
+
+    },
+    "BACK TO HOME" : {
+
+    },
+    "buy_wallets" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buy wallet"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comprar wallet"
+          }
+        }
+      }
+    },
+    "KO TPV" : {
+
+    },
+    "OK TPV" : {
+
+    },
+    "Pagar" : {
+
+    }
+  },
+  "version" : "1.0"
+}

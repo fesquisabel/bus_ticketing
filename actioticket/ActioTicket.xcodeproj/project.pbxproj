@@ -16,6 +16,8 @@
 		B03ACB7C2B6977CD00A871D8 /* TPVManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB7B2B6977CD00A871D8 /* TPVManager.swift */; };
 		B03ACB822B697CD400A871D8 /* TpvOkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB812B697CD400A871D8 /* TpvOkView.swift */; };
 		B03ACB842B697CDB00A871D8 /* TpvKoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03ACB832B697CDB00A871D8 /* TpvKoView.swift */; };
+		B0703AF02B6A9F810026A4B8 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B0703AEF2B6A9F810026A4B8 /* Localizable.xcstrings */; };
+		B0703AF42B6AB69D0026A4B8 /* ExtString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0703AF32B6AB69D0026A4B8 /* ExtString.swift */; };
 		B07AAAC32B692B3500FCBA13 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B07AAAC22B692B3500FCBA13 /* Images.xcassets */; };
 		B08F4A072B5AFA99004A57B1 /* actioticketlibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = B08F4A062B5AFA99004A57B1 /* actioticketlibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B08F4A2D2B5AFAE6004A57B1 /* ActioTicketDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F4A2C2B5AFAE6004A57B1 /* ActioTicketDelegate.swift */; };
@@ -44,6 +46,8 @@
 		B03ACB7B2B6977CD00A871D8 /* TPVManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPVManager.swift; sourceTree = "<group>"; };
 		B03ACB812B697CD400A871D8 /* TpvOkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TpvOkView.swift; sourceTree = "<group>"; };
 		B03ACB832B697CDB00A871D8 /* TpvKoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TpvKoView.swift; sourceTree = "<group>"; };
+		B0703AEF2B6A9F810026A4B8 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		B0703AF32B6AB69D0026A4B8 /* ExtString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtString.swift; sourceTree = "<group>"; };
 		B07AAAC22B692B3500FCBA13 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B08F4A032B5AFA99004A57B1 /* ActioTicket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActioTicket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08F4A062B5AFA99004A57B1 /* actioticketlibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = actioticketlibrary.h; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 			children = (
 				B07AAAC22B692B3500FCBA13 /* Images.xcassets */,
 				B0ACD1AA2B69C82800C1F721 /* Colors.xcassets */,
+				B0703AEF2B6A9F810026A4B8 /* Localizable.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 		B0ACD1982B69AD4700C1F721 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B0703AF32B6AB69D0026A4B8 /* ExtString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = B08F49F92B5AFA99004A57B1;
 			packageReferences = (
@@ -296,6 +303,7 @@
 			files = (
 				B07AAAC32B692B3500FCBA13 /* Images.xcassets in Resources */,
 				B0ACD1AB2B69C82800C1F721 /* Colors.xcassets in Resources */,
+				B0703AF02B6A9F810026A4B8 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +336,7 @@
 			files = (
 				B0ACD1A92B69B7B600C1F721 /* WalletTypeCell.swift in Sources */,
 				B0ACD1A72B69B5D900C1F721 /* WalletTypesInteractorPreview.swift in Sources */,
+				B0703AF42B6AB69D0026A4B8 /* ExtString.swift in Sources */,
 				B03ACB762B69749300A871D8 /* RedsysView.swift in Sources */,
 				B097186A2B680B020097B40B /* DataController.swift in Sources */,
 				B03ACB7C2B6977CD00A871D8 /* TPVManager.swift in Sources */,
