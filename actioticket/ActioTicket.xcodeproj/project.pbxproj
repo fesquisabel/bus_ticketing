@@ -28,6 +28,9 @@
 		B0ACD1A72B69B5D900C1F721 /* WalletTypesInteractorPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD1A62B69B5D900C1F721 /* WalletTypesInteractorPreview.swift */; };
 		B0ACD1A92B69B7B600C1F721 /* WalletTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD1A82B69B7B600C1F721 /* WalletTypeCell.swift */; };
 		B0ACD1AB2B69C82800C1F721 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0ACD1AA2B69C82800C1F721 /* Colors.xcassets */; };
+		B0C3AA7B2B6A4F45007F9760 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B0C3AA7A2B6A4F45007F9760 /* FirebaseAnalytics */; };
+		B0C3AA7D2B6A4F45007F9760 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = B0C3AA7C2B6A4F45007F9760 /* FirebaseCrashlytics */; };
+		B0C3AA7F2B6A4F45007F9760 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = B0C3AA7E2B6A4F45007F9760 /* FirebaseMessaging */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C3AA7F2B6A4F45007F9760 /* FirebaseMessaging in Frameworks */,
+				B0C3AA7B2B6A4F45007F9760 /* FirebaseAnalytics in Frameworks */,
+				B0C3AA7D2B6A4F45007F9760 /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,12 +236,18 @@
 				B08F49FF2B5AFA99004A57B1 /* Sources */,
 				B08F4A002B5AFA99004A57B1 /* Frameworks */,
 				B08F4A012B5AFA99004A57B1 /* Resources */,
+				B0C3AA872B6A525A007F9760 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ActioTicket;
+			packageProductDependencies = (
+				B0C3AA7A2B6A4F45007F9760 /* FirebaseAnalytics */,
+				B0C3AA7C2B6A4F45007F9760 /* FirebaseCrashlytics */,
+				B0C3AA7E2B6A4F45007F9760 /* FirebaseMessaging */,
+			);
 			productName = actioticketlibrary;
 			productReference = B08F4A032B5AFA99004A57B1 /* ActioTicket.framework */;
 			productType = "com.apple.product-type.framework";
@@ -264,6 +276,10 @@
 				Base,
 			);
 			mainGroup = B08F49F92B5AFA99004A57B1;
+			packageReferences = (
+				B0C3AA792B6A4F45007F9760 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				B0C3AA802B6A5159007F9760 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			productRefGroup = B08F4A042B5AFA99004A57B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -284,6 +300,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B0C3AA872B6A525A007F9760 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B08F49FF2B5AFA99004A57B1 /* Sources */ = {
@@ -536,6 +572,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B0C3AA792B6A4F45007F9760 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.20.0;
+			};
+		};
+		B0C3AA802B6A5159007F9760 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.54.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B0C3AA7A2B6A4F45007F9760 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B0C3AA792B6A4F45007F9760 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		B0C3AA7C2B6A4F45007F9760 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B0C3AA792B6A4F45007F9760 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		B0C3AA7E2B6A4F45007F9760 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B0C3AA792B6A4F45007F9760 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B003A71C2B5B05E20054C5F0 /* actioticket.xcdatamodeld */ = {

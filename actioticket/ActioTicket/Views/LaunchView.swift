@@ -19,37 +19,37 @@ public struct LaunchView: View {
     }
     
     public var body: some View {
-            NavigationStack {
-                ZStack {
-                    Color.ityneriBlue.edgesIgnoringSafeArea(.all)
-                    VStack {
-                        Spacer()
-                        Image("ic_actioticket", bundle: Bundle(identifier: "com.geoactio.actioticketlibrary"))
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .padding(120)
-                        Spacer()
-                        Image("logo_actioticket", bundle: Bundle(identifier: "com.geoactio.actioticketlibrary"))
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .padding(.leading, 100)
-                            .padding(.trailing, 100)
-                            .padding(.bottom, 20)
-                    }
+        NavigationStack {
+            ZStack {
+                Color.ityneriBlue.edgesIgnoringSafeArea(.all)
+                VStack {
+                    Spacer()
+                    Image("ic_actioticket", bundle: Bundle(identifier: "com.geoactio.actioticketlibrary"))
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding(120)
+                    Spacer()
+                    Image("logo_actioticket", bundle: Bundle(identifier: "com.geoactio.actioticketlibrary"))
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding(.leading, 100)
+                        .padding(.trailing, 100)
+                        .padding(.bottom, 20)
                 }
-                .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                        showHome.toggle()
-                    }
-                }
-                .navigationDestination(
-                    isPresented: $showHome) {
-                        HomeView() {
-                            dismiss()
-                        }.navigationBarBackButtonHidden()
-                    }
             }
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    showHome.toggle()
+                }
+            }
+            .navigationDestination(
+                isPresented: $showHome) {
+                    HomeView() {
+                        dismiss()
+                    }.navigationBarBackButtonHidden()
+                }
         }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {

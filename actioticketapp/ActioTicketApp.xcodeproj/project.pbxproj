@@ -14,6 +14,7 @@
 		B003A7222B5B06CB0054C5F0 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B003A7212B5B06CB0054C5F0 /* assets.xcassets */; };
 		B08F4A1A2B5AFAAB004A57B1 /* ActioTicketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F4A192B5AFAAB004A57B1 /* ActioTicketApp.swift */; };
 		B08F4A1C2B5AFAAB004A57B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F4A1B2B5AFAAB004A57B1 /* ContentView.swift */; };
+		B0C3AA902B6A6D69007F9760 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0C3AA8F2B6A6D69007F9760 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +39,7 @@
 		B08F4A162B5AFAAB004A57B1 /* ActioTicketApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActioTicketApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08F4A192B5AFAAB004A57B1 /* ActioTicketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActioTicketApp.swift; sourceTree = "<group>"; };
 		B08F4A1B2B5AFAAB004A57B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B0C3AA8F2B6A6D69007F9760 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				B08F4A192B5AFAAB004A57B1 /* ActioTicketApp.swift */,
 				B08F4A1B2B5AFAAB004A57B1 /* ContentView.swift */,
+				B0C3AA8F2B6A6D69007F9760 /* GoogleService-Info.plist */,
 				B003A7212B5B06CB0054C5F0 /* assets.xcassets */,
 			);
 			path = ActioTicketApp;
@@ -106,6 +109,8 @@
 			dependencies = (
 			);
 			name = ActioTicketApp;
+			packageProductDependencies = (
+			);
 			productName = actioticket;
 			productReference = B08F4A162B5AFAAB004A57B1 /* ActioTicketApp.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +139,9 @@
 				Base,
 			);
 			mainGroup = B08F4A0D2B5AFAAB004A57B1;
+			packageReferences = (
+				B0C3AA882B6A56A1007F9760 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B08F4A172B5AFAAB004A57B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B003A7222B5B06CB0054C5F0 /* assets.xcassets in Resources */,
+				B0C3AA902B6A6D69007F9760 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +318,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.geoactio.lleida;
+				PRODUCT_BUNDLE_IDENTIFIER = com.geoactio.actioticket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -343,7 +352,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.geoactio.lleida;
+				PRODUCT_BUNDLE_IDENTIFIER = com.geoactio.actioticket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -376,6 +385,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B0C3AA882B6A56A1007F9760 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = B08F4A0E2B5AFAAB004A57B1 /* Project object */;
 }

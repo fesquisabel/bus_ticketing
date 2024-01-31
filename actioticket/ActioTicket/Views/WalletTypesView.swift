@@ -14,8 +14,7 @@ struct WalletTypesView: View {
     @Binding var toRoot: Bool
     @Environment(\.dismiss) var dismissToRoot: DismissAction
     
-    //@State var vm = WalletTypesViewModel()
-    @State var vm = WalletTypesViewModel(walletTypesLogic: WalletTypesLogic(interactor: WalletTypesInteractorPreview()))
+    @State var vm = WalletTypesViewModel()
 
     var body: some View {
         ZStack {
