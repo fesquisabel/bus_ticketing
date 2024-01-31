@@ -18,7 +18,7 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            Button("Open SDK") {
+            Button("Open ActioTicket 3.0") {
                 isPresented.toggle()
             }.buttonStyle(.borderedProminent)
                 .bold()

@@ -21,13 +21,13 @@ public struct LaunchView: View {
     public var body: some View {
             NavigationStack {
                 ZStack {
-                    Color.blue.edgesIgnoringSafeArea(.all)
+                    Color.ityneriBlue.edgesIgnoringSafeArea(.all)
                     VStack {
                         Spacer()
-                        Image("logo_palma", bundle: Bundle(identifier: "com.geoactio.actioticketlibrary"))
+                        Image("ic_actioticket", bundle: Bundle(identifier: "com.geoactio.actioticketlibrary"))
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .padding(80)
+                            .padding(120)
                         Spacer()
                         Image("logo_actioticket", bundle: Bundle(identifier: "com.geoactio.actioticketlibrary"))
                             .resizable()
